@@ -8,19 +8,19 @@ export default function Projects() {
       title: 'DATACENTER CO-1',
       description: 'Complete physical integration for Financial Bank Corp.',
       image: '/project_datacenter.png',
-      link: '#',
+      link: '#contact',
     },
     {
       title: 'FIBER OPTIC WAN',
       description: 'Multicentral WAN expansion for logistics conglomerate.',
       image: '/project_fiber.png',
-      link: '#',
+      link: '#contact',
     },
     {
       title: 'VIDEO SURVEILLANCE',
       description: 'AI-integrated security monitoring for National Airport.',
       image: '/project_cctv.png',
-      link: '#',
+      link: '#contact',
     },
   ];
 

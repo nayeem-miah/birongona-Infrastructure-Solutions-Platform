@@ -79,7 +79,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <span className="text-sm sm:text-base text-zinc-300 font-medium leading-relaxed">
-                  Tech District V, Silicon Valley, CA
+                  Dhaka, Bangladesh
                 </span>
               </div>
             </div>

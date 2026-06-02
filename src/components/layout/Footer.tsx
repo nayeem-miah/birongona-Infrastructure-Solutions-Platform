@@ -24,17 +24,17 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link href="#security" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
+                <Link href="#services" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
                   Network Security
                 </Link>
               </li>
               <li>
-                <Link href="#migration" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
+                <Link href="#services" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
                   Cloud Migration
                 </Link>
               </li>
               <li>
-                <Link href="#support" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
+                <Link href="#services" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
                   SLA Support
                 </Link>
               </li>
@@ -48,17 +48,17 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link href="#compliance" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
+                <Link href="#stats" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
                   Compliance
                 </Link>
               </li>
               <li>
-                <Link href="#privacy" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
+                <Link href="#contact" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#docs" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
+                <Link href="#contact" className="text-zinc-500 hover:text-[#00DF89] transition-colors">
                   Tech Documentation
                 </Link>
               </li>
@@ -71,8 +71,8 @@ export default function Footer() {
               HEADQUARTERS
             </h3>
             <p className="text-sm leading-relaxed text-zinc-400">
-              Tech District V, Silicon Valley<br />
-              Building 01, Rack Suite 404
+              Dhaka, Bangladesh<br />
+              Infrastructure Operations Hub
             </p>
             {/* Social / Info Icons */}
             <div className="flex space-x-3.5 pt-2">

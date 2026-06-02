@@ -9,10 +9,10 @@ export default function Navbar() {
 
   const navItems = [
     { name: 'Services', href: '#services' },
-    { name: 'Solutions', href: '#solutions' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Insights', href: '#insights' },
-    { name: 'About', href: '#about' },
+    { name: 'Solutions', href: '#stats' },
+    { name: 'Portfolio', href: '#projects' },
+    { name: 'Insights', href: '#testimonial' },
+    { name: 'About', href: '#contact' },
   ];
 
   return (
@@ -52,22 +52,30 @@ export default function Navbar() {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-6">
             {/* Custom Connection Icon */}
-            <button className="text-[#00DF89] hover:text-white/80 transition-colors p-1.5 rounded-lg hover:bg-white/5 cursor-pointer" aria-label="Connection link">
+            <Link 
+              href="#services" 
+              className="text-[#00DF89] hover:text-white/80 transition-colors p-1.5 rounded-lg hover:bg-white/5 cursor-pointer" 
+              aria-label="Connection link"
+            >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 9l-4 3 4 3m8-6l4 3-4 3" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeDasharray="2 2" d="M9 12h6" />
               </svg>
-            </button>
+            </Link>
 
             {/* Custom Bar Chart Icon */}
-            <button className="text-[#00DF89] hover:text-white/80 transition-colors p-1.5 rounded-lg hover:bg-white/5 cursor-pointer" aria-label="Performance stats">
+            <Link 
+              href="#stats" 
+              className="text-[#00DF89] hover:text-white/80 transition-colors p-1.5 rounded-lg hover:bg-white/5 cursor-pointer" 
+              aria-label="Performance stats"
+            >
               <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="18" y1="20" x2="18" y2="10" />
                 <line x1="12" y1="20" x2="12" y2="4" />
                 <line x1="6" y1="20" x2="6" y2="14" />
                 <path d="M3 18l6-6 4 4 8-8" />
               </svg>
-            </button>
+            </Link>
 
             {/* CTA Button */}
             <Link
@@ -127,20 +135,30 @@ export default function Navbar() {
             {/* Mobile Actions */}
             <div className="mt-4 pt-4 border-t border-white/[0.05] px-3 flex flex-col gap-4">
               <div className="flex items-center gap-4">
-                <button className="text-[#00DF89] hover:text-white/80 transition-colors p-2 rounded-lg bg-white/5" aria-label="Connection link">
+                <Link 
+                  href="#services" 
+                  onClick={() => setIsOpen(false)}
+                  className="text-[#00DF89] hover:text-white/80 transition-colors p-2 rounded-lg bg-white/5 cursor-pointer" 
+                  aria-label="Connection link"
+                >
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 9l-4 3 4 3m8-6l4 3-4 3" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeDasharray="2 2" d="M9 12h6" />
                   </svg>
-                </button>
-                <button className="text-[#00DF89] hover:text-white/80 transition-colors p-2 rounded-lg bg-white/5" aria-label="Performance stats">
+                </Link>
+                <Link 
+                  href="#stats" 
+                  onClick={() => setIsOpen(false)}
+                  className="text-[#00DF89] hover:text-white/80 transition-colors p-2 rounded-lg bg-white/5 cursor-pointer" 
+                  aria-label="Performance stats"
+                >
                   <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="18" y1="20" x2="18" y2="10" />
                     <line x1="12" y1="20" x2="12" y2="4" />
                     <line x1="6" y1="20" x2="6" y2="14" />
                     <path d="M3 18l6-6 4 4 8-8" />
                   </svg>
-                </button>
+                </Link>
               </div>
               <Link
                 href="#contact"

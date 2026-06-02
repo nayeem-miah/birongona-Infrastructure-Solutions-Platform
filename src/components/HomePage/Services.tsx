@@ -58,7 +58,7 @@ export default function Services() {
           </div>
           <div className="mt-4 md:mt-0">
             <Link
-              href="#services"
+              href="#contact"
               className="inline-flex items-center text-sm font-semibold text-[#00DF89] hover:underline gap-1.5"
             >
               View Services Details
@@ -72,8 +72,9 @@ export default function Services() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, idx) => (
-            <div
+            <Link
               key={idx}
+              href="#contact"
               className="group relative flex flex-col justify-between rounded-2xl border border-white/[0.05] bg-[#0d1527]/10 p-8 hover:border-white/10 hover:bg-white/[0.02] transition-all duration-300 min-h-[280px]"
             >
               <div className="space-y-6">
@@ -101,7 +102,7 @@ export default function Services() {
                   </svg>
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
