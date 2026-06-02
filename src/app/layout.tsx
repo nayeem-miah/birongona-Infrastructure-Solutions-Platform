@@ -15,8 +15,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Birongona.it | Premium Digital Agency Boilerplate",
-  description: "A clean, modern, and production-ready starter boilerplate for Next.js, TypeScript, and Tailwind CSS v4.",
+  title: {
+    default: "Birongona IT | Enterprise Infrastructure & Data Center Solutions",
+    template: "%s | Birongona IT"
+  },
+  description: "Dhaka's leading precision-engineered IT infrastructure agency. Providing high-availability network security SLA, carrier-neutral data centers, and enterprise IP telephony solutions in Bangladesh.",
+  keywords: [
+    "Birongona IT",
+    "IT Infrastructure Bangladesh",
+    "Data Center Solutions Dhaka",
+    "Network Security SLA",
+    "Enterprise Networking",
+    "IP Telephony Integration Bangladesh",
+    "Fire Suppression Systems"
+  ],
+  authors: [{ name: "Md Nayeem", url: "https://nayeem-miah.vercel.app/" }],
+  creator: "Birongona IT",
+  publisher: "Birongona IT",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://birongona.it",
+    title: "Birongona IT | Enterprise Infrastructure & Data Center Solutions",
+    description: "Dhaka's leading precision-engineered IT infrastructure agency. Providing high-availability network security SLA, carrier-neutral data centers, and enterprise IP telephony solutions.",
+    siteName: "Birongona IT",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Birongona IT | Enterprise Infrastructure & Data Center Solutions",
+    description: "Dhaka's leading precision-engineered IT infrastructure agency. Providing high-availability network security SLA, carrier-neutral data centers, and enterprise IP telephony solutions.",
+  },
 };
 
 export default function RootLayout({

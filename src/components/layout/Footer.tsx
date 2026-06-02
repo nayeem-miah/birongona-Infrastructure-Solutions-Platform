@@ -105,9 +105,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright centered */}
-        <div className="mt-16 pt-8 border-t border-white/[0.03] text-center">
+        <div className="mt-16 pt-8 border-t border-white/[0.03] text-center space-y-2">
           <p className="text-sm text-zinc-500">
             &copy; 2024 Birongona IT Infrastructure Solutions. Engineered for stability.
+          </p>
+          <p className="text-xs text-zinc-600">
+            Developed by{' '}
+            <Link 
+              href="https://nayeem-miah.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#00DF89] hover:underline"
+            >
+              Md Nayeem
+            </Link>
           </p>
         </div>
       </div>
