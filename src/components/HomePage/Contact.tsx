@@ -54,7 +54,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <span className="text-sm sm:text-base text-zinc-300 font-medium">
-                  info@birongona.it
+                  paismia64@gmail.com
                 </span>
               </div>
 
@@ -66,7 +66,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <span className="text-sm sm:text-base text-zinc-300 font-medium">
-                  +880 1849317388
+                  +880 1979291307
                 </span>
               </div>
 
