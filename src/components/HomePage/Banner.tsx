@@ -1,15 +1,21 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Banner() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#040812]">
       {/* Background Server Rack Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-        style={{ backgroundImage: `url('/server_rack_bg.png')` }}
-      />
+      <div className="absolute inset-0 opacity-40 pointer-events-none z-0">
+        <Image 
+          src="/server_rack_bg.png" 
+          alt="Server rack background" 
+          fill 
+          priority 
+          className="object-cover"
+        />
+      </div>
       
       {/* Overlay Gradients for readability and section blending */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#040812]/30 via-transparent to-[#040812] pointer-events-none" />

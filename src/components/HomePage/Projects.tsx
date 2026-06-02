@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
@@ -44,10 +45,12 @@ export default function Projects() {
             >
               {/* Aspect Ratio Box for Image */}
               <div className="relative aspect-video w-full overflow-hidden bg-zinc-950">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500 opacity-80"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-500 opacity-80"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
               </div>
