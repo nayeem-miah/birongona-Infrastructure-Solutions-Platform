@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <h3 className="text-sm font-bold tracking-wider text-[#00DF89] uppercase">
-              NETCORE INFRA
+              BIRONGONA IT
             </h3>
             <p className="text-sm leading-relaxed text-zinc-400">
               Precision-engineered infrastructure for the world's most demanding digital workloads.
@@ -107,7 +107,7 @@ export default function Footer() {
         {/* Bottom copyright centered */}
         <div className="mt-16 pt-8 border-t border-white/[0.03] text-center">
           <p className="text-sm text-zinc-500">
-            &copy; 2024 NetCore Infrastructure Solutions. Engineered for stability.
+            &copy; 2024 Birongona IT Infrastructure Solutions. Engineered for stability.
           </p>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <span className="text-xl font-extrabold tracking-wider text-[#00DF89] font-sans">
-                NETCORE INFRA
+                BIRONGONA IT
               </span>
             </Link>
           </div>
